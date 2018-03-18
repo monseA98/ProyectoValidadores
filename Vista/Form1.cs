@@ -52,6 +52,17 @@ namespace Vista
                 inval += "Edad\n";
             }
 
+            //DIGITO
+            //EDAD
+            if (o.esDigito(txtDigito.Text))
+            {
+                valido += "Digito\n";
+            }
+            else
+            {
+                inval += "Digito\n";
+            }
+
             MessageBox.Show("Validos:\n"+valido+"Invalidos:\n"+inval);
         }
     }

@@ -70,6 +70,22 @@ namespace Datos
             {
                 return false;
             }
+        }
+
+        public Boolean esDigito(String decim)
+        {
+            if (decim.ToUpper().Equals("CERO") || decim.ToUpper().Equals("UNO") 
+                || decim.ToUpper().Equals("DOS") || decim.ToUpper().Equals("TRES") 
+                || decim.ToUpper().Equals("CUATRO") || decim.ToUpper().Equals("CINCO")
+                || decim.ToUpper().Equals("SEIS") || decim.ToUpper().Equals("SIETE") 
+                || decim.ToUpper().Equals("OCHO") || decim.ToUpper().Equals("NUEVE"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
         }
     }
